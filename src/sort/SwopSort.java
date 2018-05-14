@@ -24,6 +24,7 @@ public class SwopSort {
 		ArrayUtil.sysArr(a,"bubbleSort:");
 	}
 	
+	//可改进，等于放中间
 	public static void fastSort(int[] a,int left,int right) {
 		int key=a[left],i=left,j=right;
 		while(left<right) {
@@ -35,6 +36,7 @@ public class SwopSort {
 				left++;
 			}
 			a[right]=a[left];
+			
 		}
 		a[left]=key;
 		ArrayUtil.sysArr(a,"fastSort：");
